@@ -1,6 +1,6 @@
 # Nyasha Mpofu — Portfolio & Resume
 
-A professional portfolio built with Streamlit for **Nyasha Mpofu**, Junior Electrical Engineer specialising in renewable energy, solar PV, BESS systems, and power distribution.
+A professional portfolio  for **Nyasha Mpofu**, an Electrical Engineer specialising in renewable energy, solar PV, BESS systems, and power distribution.
 
 ## 🚀 Live Demo
 
