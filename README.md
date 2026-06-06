@@ -1,6 +1,6 @@
 # Nyasha Mpofu — Portfolio & Resume
 
-A professional portfolio  for **Nyasha Mpofu**, an Electrical Engineer specialising in renewable energy, solar PV, BESS systems, and power distribution.
+A professional portfolio  for **Nyasha Mpofu**, Electrical Engineer specialising in renewable energy, solar PV, BESS systems, and power distribution.
 
 ## 🚀 Live Demo
 
