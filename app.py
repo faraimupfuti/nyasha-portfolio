@@ -451,7 +451,7 @@ if "About" in page:
     with col1:
         st.metric("Experience", "1+ yrs", "Incl. Attaché")
     with col2:
-        st.metric("Projects", "4+", "Named Deliveries")
+        st.metric("Projects", "3+", "Named Deliveries")
     with col3:
         st.metric("Degree Class", "2.1", "Upper Second")
     with col4:
