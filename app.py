@@ -277,6 +277,19 @@ html, body, [class*="css"] {
 /* Divider */
 .divider { border: none; border-top: 1px solid var(--border); margin: 1.8rem 0; }
 
+/* Timeline */
+.tl-wrap { position: relative; padding-left: 1.8rem; margin-top: 1rem; }
+.tl-line { position: absolute; left: 0.4rem; top: 0; bottom: 0; width: 2px; background: var(--border); border-radius: 2px; }
+.tl-item { position: relative; margin-bottom: 1.8rem; }
+.tl-item:last-child { margin-bottom: 0; }
+.tl-dot { position: absolute; left: -1.4rem; top: 0.35rem; width: 10px; height: 10px; border-radius: 50%; border: 2px solid var(--bg-dark); }
+.tl-dot-lime  { background: var(--accent-lime); }
+.tl-dot-gold  { background: var(--accent-gold); }
+.tl-dot-sky   { background: var(--accent-sky); }
+.tl-dot-muted { background: var(--border); }
+.tl-date { font-family: 'Syne', sans-serif; font-size: 0.95rem; font-weight: 700; color: #e8f0e9; }
+.tl-role { font-size: 0.85rem; color: #7a9e80; margin-top: 0.1rem; }
+
 /* Streamlit overrides */
 .stButton > button {
     background: var(--accent-lime) !important; color: #0a0f0d !important;
@@ -634,42 +647,7 @@ elif "Experience" in page:
 
     st.markdown("<hr class='divider'>", unsafe_allow_html=True)
     st.markdown('<div class="section-label">Timeline</div>', unsafe_allow_html=True)
-    st.markdown("""
-    <div style="position:relative;padding-left:1.8rem;margin-top:1rem;">
-        <div style="position:absolute;left:0.4rem;top:0;bottom:0;width:2px;background:var(--border);border-radius:2px;"></div>
-
-        <div style="position:relative;margin-bottom:1.8rem;">
-            <div style="position:absolute;left:-1.4rem;top:0.3rem;width:10px;height:10px;border-radius:50%;
-                        background:var(--accent-gold);border:2px solid var(--bg-dark);"></div>
-            <div style="font-family:Syne,sans-serif;font-size:0.95rem;font-weight:700;color:#e8f0e9;">Feb 2025 – Present</div>
-            <div style="font-size:0.85rem;color:#7a9e80;">Policy Researcher · COMALISO (Part-time)</div>
-        </div>
-        <div style="position:relative;margin-bottom:1.8rem;">
-            <div style="position:absolute;left:-1.4rem;top:0.3rem;width:10px;height:10px;border-radius:50%;
-                        background:var(--accent-lime);border:2px solid var(--bg-dark);"></div>
-            <div style="font-family:Syne,sans-serif;font-size:0.95rem;font-weight:700;color:#e8f0e9;">Feb – Apr 2026</div>
-            <div style="font-size:0.85rem;color:#7a9e80;">Graduate Electrical Engineer · Power Life Energy</div>
-        </div>
-        <div style="position:relative;margin-bottom:1.8rem;">
-            <div style="position:absolute;left:-1.4rem;top:0.3rem;width:10px;height:10px;border-radius:50%;
-                        background:var(--accent-gold);border:2px solid var(--bg-dark);"></div>
-            <div style="font-family:Syne,sans-serif;font-size:0.95rem;font-weight:700;color:#e8f0e9;">Jul 2024</div>
-            <div style="font-size:0.85rem;color:#7a9e80;">BSc (Hons) Electrical Engineering Awarded · University of Zimbabwe</div>
-        </div>
-        <div style="position:relative;margin-bottom:1.8rem;">
-            <div style="position:absolute;left:-1.4rem;top:0.3rem;width:10px;height:10px;border-radius:50%;
-                        background:var(--accent-sky);border:2px solid var(--bg-dark);"></div>
-            <div style="font-family:Syne,sans-serif;font-size:0.95rem;font-weight:700;color:#e8f0e9;">Nov 2022 – Oct 2023</div>
-            <div style="font-size:0.85rem;color:#7a9e80;">Engineering Attaché · ZETDC</div>
-        </div>
-        <div style="position:relative;">
-            <div style="position:absolute;left:-1.4rem;top:0.3rem;width:10px;height:10px;border-radius:50%;
-                        background:var(--border);border:2px solid var(--bg-dark);"></div>
-            <div style="font-family:Syne,sans-serif;font-size:0.95rem;font-weight:700;color:#e8f0e9;">Aug 2020</div>
-            <div style="font-size:0.85rem;color:#7a9e80;">Commenced BSc Electrical Engineering · University of Zimbabwe</div>
-        </div>
-    </div>
-    """, unsafe_allow_html=True)
+    st.markdown("""<div class="tl-wrap"><div class="tl-line"></div><div class="tl-item"><div class="tl-dot tl-dot-gold"></div><div class="tl-date">Feb 2025 – Present</div><div class="tl-role">Policy Researcher · COMALISO (Part-time)</div></div><div class="tl-item"><div class="tl-dot tl-dot-lime"></div><div class="tl-date">Feb – Apr 2026</div><div class="tl-role">Graduate Electrical Engineer · Power Life Energy</div></div><div class="tl-item"><div class="tl-dot tl-dot-gold"></div><div class="tl-date">Jul 2024</div><div class="tl-role">BSc (Hons) Electrical Engineering Awarded · University of Zimbabwe</div></div><div class="tl-item"><div class="tl-dot tl-dot-sky"></div><div class="tl-date">Nov 2022 – Oct 2023</div><div class="tl-role">Engineering Attaché · ZETDC</div></div><div class="tl-item"><div class="tl-dot tl-dot-muted"></div><div class="tl-date">Aug 2020</div><div class="tl-role">Commenced BSc Electrical Engineering · University of Zimbabwe</div></div></div>""", unsafe_allow_html=True)
 
 
 # ═══════════════════════════════════════════════════════
